@@ -1,10 +1,19 @@
 <?php
-$common=[
-    'env'=>'dev',
-    'name'=>'Red Knot Framework',
-    'defaults'=>[
-        'router'=>['class'=>'rk\\core\\Router'],
-        'controller'=>['class'=>'common\\controller\\SiteController'],
-        'site404'=>['class'=>'common\\controller\\Site404Controller']
-    ]
+$common = [
+    'env' => 'dev',
+    'app_dir' => 'app',
+    'name' => 'Red Knot Framework',
+    'defaults' => [
+        'router' => [
+            'class' => 'Router',
+            'path' => 'rk\\core\\',
+        ],
+        'controller' => [
+            'class' => 'SiteController',
+            'path' => 'controller\\',
+        ],
+        'site404' => [
+            'class' => 'Site404Controller',
+            'path' => 'controller\\'],
+    ],
 ];

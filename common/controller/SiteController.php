@@ -1,6 +1,6 @@
 <?php
 
-namespace app\common\controller;
+namespace controller;
 use rk\base\Controller;
 class SiteController extends Controller
 {
